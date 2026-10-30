@@ -1,0 +1,148 @@
+# APB UVM Verification Environment
+
+This project verifies an APB3 slave memory using a SystemVerilog UVM testbench in Vivado/XSim.
+
+## Overview
+
+The repository keeps the working Vivado source layout intact and adds GitHub-ready documentation, scripts, and ignore rules around it.
+
+Key facts:
+
+- DUT: `APB_slave.sv`
+- Simulation top: `tb_top.sv`
+- Tool: Vivado/XSim 2023.2
+- Data width: 32-bit
+- Address width: 5-bit
+- Valid memory addresses: `0x0` to `0x7`
+- Out-of-bounds addresses: `0x8` to `0x1F`
+- OOB accesses assert `PSLVERR`
+- Default wait-state setting: `WAIT_CYCLES=2`
+- Reset clears memory to zero
+
+## DUT Summary
+
+The DUT is a small APB3 slave RAM with eight 32-bit locations. Valid transactions complete after the configured wait-state count, while invalid addresses raise `PSLVERR`.
+
+## Verification Environment
+
+The UVM environment includes:
+
+- a transaction class for APB read/write items
+- a driver that speaks APB setup/access timing
+- a monitor that captures completed transfers and reset events
+- a scoreboard with a software golden memory model
+- a coverage subscriber for valid addresses, OOB addresses, wait states, and protocol outcomes
+
+```mermaid
+flowchart LR
+    SEQ[Sequences] --> SQR[Sequencer]
+    SQR --> DRV[APB Driver]
+    DRV --> IF[apb_if]
+    IF --> DUT[APB_slave DUT]
+    DUT --> IF
+    IF --> MON[APB Monitor]
+    MON --> SCB[Scoreboard]
+    MON --> COV[Coverage Subscriber]
+```
+
+## Test Scenarios
+
+- Read-before-write sweep over all valid addresses
+- Random valid write/read traffic
+- Back-to-back valid transfers
+- Single illegal-address error check
+- Full OOB sweep from `0x08` to `0x1F` for both read and write
+- Mid-test reset validation
+
+## Assertions
+
+Protocol checks are implemented in `apb_if.sv` and cover:
+
+- APB setup phase behavior
+- APB access phase behavior
+- address stability during wait states
+- write-data stability during wait states
+- `PENABLE` deassertion after completion
+- `PSLVERR` only being meaningful when `PREADY` is asserted
+
+## Functional Coverage
+
+Coverage is implemented in `apb_coverage.sv` and tracks:
+
+- valid address bins for `0x0` to `0x7`
+- full address bins for valid and OOB addresses
+- read and write operations
+- `PSLVERR` behavior
+- wait-state bins for zero, one, and multi-wait transfers
+- address x operation cross coverage
+- `PSLVERR` x operation cross coverage
+
+## Coverage Report
+
+The latest Xcrg report shows a coverage score of `90.4762%` for the single `apb_coverage` instance.
+
+What is fully covered:
+
+- `cp_paddr` at `100%`
+- `cp_paddr_full` at `100%`
+- `cp_pwrite` at `100%`
+- `cp_pslverr` at `100%`
+- `cross_addr_op` at `100%`
+- `cross_err_op` at `100%`
+
+
+The detailed report is in `reports/coverage/xcrg_report/xcrg_func_cov_report.txt`.
+
+## Repository Structure
+
+The working Vivado files stay in place:
+
+- `apb_uvm.srcs/sources_1/new/APB_slave.sv`
+- `apb_uvm.srcs/sim_1/new/*.sv`
+- `apb_uvm.xpr`
+
+Added packaging content lives in:
+
+- `scripts/`
+- `docs/`
+- `reports/`
+- `waves/`
+- `.gitignore`
+
+## Running the Simulation
+
+The existing Vivado-generated XSim flow can be reused without moving files:
+
+- open `apb_uvm.xpr` in Vivado
+- or run the helper script in `scripts/run_existing_vivado_sim.sh`
+
+## Generating Coverage Reports
+
+Coverage data is already produced by the XSim run under the Vivado simulation tree. Use `scripts/gen_coverage_report.sh` to copy or summarize the existing coverage artifacts into `reports/coverage/`.
+
+## Waveform Example
+
+![APB wait-state waveform](docs/images/apb_wait_state_waveform.png)
+
+The waveform above is the APB read example discussed in `docs/waveform_analysis.md`.
+
+## Current Results
+
+The latest recorded `apb_reset_test` run completed successfully with:
+
+- `UVM_INFO = 142`
+- `UVM_WARNING = 0`
+- `UVM_ERROR = 0`
+- `UVM_FATAL = 0`
+- simulation end time: `8985 ns`
+- XSim runtime: `100000 ns`
+
+Observed passing checks include:
+
+- read-before-write reset behavior
+- valid write/read comparison
+- back-to-back transfers
+- OOB `PSLVERR` behavior
+- mid-test reset recovery
+
+

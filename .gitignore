@@ -1,0 +1,27 @@
+# Vivado / XSim generated files
+apb_uvm.cache/
+apb_uvm.hw/
+apb_uvm.ip_user_files/
+apb_uvm.sim/
+vivado*.jou
+vivado*.log
+vivado*.str
+/*.jou
+/*.log
+/*.pb
+/*.wdb
+/*.vcd
+/*.jou~
+/*.log~
+/*.str~
+/*.tmp
+/*.tmp.*
+/*.xpr.user
+/*.cache/
+/*.runs/
+/*.sim/
+/xsim.dir/
+
+# Waveform exports
+waves/*
+!waves/README.md

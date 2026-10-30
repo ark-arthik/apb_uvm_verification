@@ -1,0 +1,143 @@
+Time resolution is 1 ps
+UVM_INFO /tools/Xilinx/Vivado/2023.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /tools/Xilinx/Vivado/2023.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test apb_reset_test...
+UVM_INFO /tools/Xilinx/Vivado/2023.2/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_test.sv(62) @ 0: uvm_test_top [TEST] Phase 1: Standard coverage run...
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_sequence.sv(103) @ 0: uvm_test_top.env.agent.sequencer@@rbw_seq [SEQ] Reading all valid addresses before any write (expect 0x0)...
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(78) @ 75000: uvm_test_top.env.scoreboard [SCB] PASS!  Read uninitialised Addr:0x0 returned 0x0 (correct reset value)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(78) @ 125000: uvm_test_top.env.scoreboard [SCB] PASS!  Read uninitialised Addr:0x1 returned 0x0 (correct reset value)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(78) @ 175000: uvm_test_top.env.scoreboard [SCB] PASS!  Read uninitialised Addr:0x2 returned 0x0 (correct reset value)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(78) @ 225000: uvm_test_top.env.scoreboard [SCB] PASS!  Read uninitialised Addr:0x3 returned 0x0 (correct reset value)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(78) @ 275000: uvm_test_top.env.scoreboard [SCB] PASS!  Read uninitialised Addr:0x4 returned 0x0 (correct reset value)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(78) @ 325000: uvm_test_top.env.scoreboard [SCB] PASS!  Read uninitialised Addr:0x5 returned 0x0 (correct reset value)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(78) @ 375000: uvm_test_top.env.scoreboard [SCB] PASS!  Read uninitialised Addr:0x6 returned 0x0 (correct reset value)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(78) @ 425000: uvm_test_top.env.scoreboard [SCB] PASS!  Read uninitialised Addr:0x7 returned 0x0 (correct reset value)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_sequence.sv(112) @ 425000: uvm_test_top.env.agent.sequencer@@rbw_seq [SEQ] Read-before-write sweep complete.
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 525000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x0  Exp:0x8a6db7da  Act:0x8a6db7da  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 625000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x0  Exp:0xc0b4d4c7  Act:0xc0b4d4c7  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 725000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x3  Exp:0xdb1c56c4  Act:0xdb1c56c4  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 825000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x7  Exp:0xeb08d078  Act:0xeb08d078  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 925000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x3  Exp:0xec9d0556  Act:0xec9d0556  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 1025000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x3  Exp:0x885d8efe  Act:0x885d8efe  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 1125000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x4  Exp:0xc4f8ce45  Act:0xc4f8ce45  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 1225000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x4  Exp:0x863ece2e  Act:0x863ece2e  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 1325000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x3  Exp:0xb81f689d  Act:0xb81f689d  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 1425000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x6  Exp:0x924a937b  Act:0x924a937b  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 1525000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x3  Exp:0x202bd65  Act:0x202bd65  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 1625000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x3  Exp:0xeeae0b4d  Act:0xeeae0b4d  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 1725000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x5  Exp:0xc021229d  Act:0xc021229d  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 1825000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x5  Exp:0xd035c13d  Act:0xd035c13d  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 1925000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x4  Exp:0x327d6421  Act:0x327d6421  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 2025000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x0  Exp:0xfc46072a  Act:0xfc46072a  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 2125000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x3  Exp:0xf1d33233  Act:0xf1d33233  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 2225000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x0  Exp:0x34c267e2  Act:0x34c267e2  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 2325000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x1  Exp:0xfd565bd3  Act:0xfd565bd3  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 2425000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x4  Exp:0x16ef1e05  Act:0x16ef1e05  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 2525000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x1  Exp:0x2f7afe48  Act:0x2f7afe48  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 2625000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x6  Exp:0x2c758861  Act:0x2c758861  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 2725000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x4  Exp:0x2eb0bbe3  Act:0x2eb0bbe3  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 2825000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x2  Exp:0x34f64c17  Act:0x34f64c17  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 2925000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x5  Exp:0xc10cf35d  Act:0xc10cf35d  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 3025000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x5  Exp:0x23f87814  Act:0x23f87814  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 3125000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x1  Exp:0xbdcbdebe  Act:0xbdcbdebe  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 3225000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x1  Exp:0xbfe03053  Act:0xbfe03053  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 3325000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x6  Exp:0xfa5a996b  Act:0xfa5a996b  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 3425000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x2  Exp:0x791e52c  Act:0x791e52c  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 3525000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x7  Exp:0xfcc76d49  Act:0xfcc76d49  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 3625000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x0  Exp:0xcffaae3e  Act:0xcffaae3e  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 3725000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x7  Exp:0x2b4abeb0  Act:0x2b4abeb0  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 3825000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x6  Exp:0x213f45e6  Act:0x213f45e6  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 3925000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x6  Exp:0xdefea9c8  Act:0xdefea9c8  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 4025000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x1  Exp:0x112af9bc  Act:0x112af9bc  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 4125000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x7  Exp:0x88c68895  Act:0x88c68895  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 4225000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x2  Exp:0x325b953c  Act:0x325b953c  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 4325000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x7  Exp:0x23a434da  Act:0x23a434da  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 4425000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x1  Exp:0xcb09fea5  Act:0xcb09fea5  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 4525000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x2  Exp:0x8eec32b7  Act:0x8eec32b7  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 4625000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x0  Exp:0x8626b6d1  Act:0x8626b6d1  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 4725000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x4  Exp:0x99e786d6  Act:0x99e786d6  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 4825000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x5  Exp:0xd0f1ec08  Act:0xd0f1ec08  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 4925000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x7  Exp:0xe791ad5f  Act:0xe791ad5f  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 5025000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x4  Exp:0x1b64219f  Act:0x1b64219f  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 5125000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x2  Exp:0x2849590e  Act:0x2849590e  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 5225000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x4  Exp:0xdc43b47a  Act:0xdc43b47a  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 5325000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x4  Exp:0x36eb121  Act:0x36eb121  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 5425000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x7  Exp:0xc34b018d  Act:0xc34b018d  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_sequence.sv(132) @ 5425000: uvm_test_top.env.agent.sequencer@@b2b_seq [SEQ] Starting back-to-back write/read pairs...
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 5875000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x0  Exp:0x3cf947c7  Act:0x3cf947c7  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 5925000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x1  Exp:0x1f8eb642  Act:0x1f8eb642  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 5975000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x2  Exp:0x86853ace  Act:0x86853ace  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 6025000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x3  Exp:0xd9635c5e  Act:0xd9635c5e  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 6075000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x4  Exp:0xd7368d16  Act:0xd7368d16  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 6125000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x5  Exp:0x89d03c83  Act:0x89d03c83  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 6175000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x6  Exp:0x1e16ca57  Act:0x1e16ca57  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(69) @ 6225000: uvm_test_top.env.scoreboard [SCB] PASS!  Addr:0x7  Exp:0x142fd50c  Act:0x142fd50c  WaitCycles:2
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_sequence.sv(150) @ 6225000: uvm_test_top.env.agent.sequencer@@b2b_seq [SEQ] Back-to-back sequence complete.
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_sequence.sv(43) @ 6225000: uvm_test_top.env.agent.sequencer@@error_seq [SEQ] Intentionally generating Out-Of-Bounds APB Error...
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6275000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xf (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_sequence.sv(66) @ 6275000: uvm_test_top.env.agent.sequencer@@oob_seq [SEQ] Starting full OOB address sweep (0x08-0x1F, R+W)...
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6325000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x8 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6375000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x8 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6425000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x9 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6475000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x9 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6525000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xa (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6575000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xa (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6625000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xb (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6675000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xb (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6725000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xc (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6775000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xc (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6825000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xd (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6875000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xd (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6925000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xe (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 6975000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xe (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7025000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xf (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7075000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0xf (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7125000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x10 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7175000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x10 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7225000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x11 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7275000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x11 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7325000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x12 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7375000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x12 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7425000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x13 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7475000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x13 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7525000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x14 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7575000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x14 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7625000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x15 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7675000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x15 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7725000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x16 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7775000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x16 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7825000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x17 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7875000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x17 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7925000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x18 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 7975000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x18 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8025000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x19 (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8075000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x19 (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8125000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x1a (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8175000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x1a (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8225000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x1b (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8275000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x1b (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8325000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x1c (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8375000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x1c (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8425000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x1d (op=WRITE)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8475000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x1d (op= READ)
+UVM_INFO /home/joelphilip/Documents/dft/apb_uvm/apb_uvm.srcs/sim_1/new/apb_scoreboard.sv(43) @ 8525000: uvm_test_top.env.scoreboard [SCB] PASS: PSLVERR correctly set for OOB address 0x1e (op=WRITE)

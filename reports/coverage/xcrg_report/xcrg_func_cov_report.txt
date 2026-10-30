@@ -1,0 +1,283 @@
+
+ Xcrg Functional Coverage Report 
+
+ // To generate a more detailed report in html format, please run xcrg -dir <database> -report_format html -report_dir <dir>
+ // This is a text report also in CSV format. By exporting to Excel and using , as the delimiter, the data can be split into individual rows and columns
+ // This report contains 3 sections, Total Summary, CoverGroups Summary and CoverPoint Tables sections 
+ // In order to navigate to a CoverPoint's Table, the TableTag printed for the respective covergroup/instance can be grepped in this report
+ // For example, if covergroup name is g1 and coverpoint is cp1, the TableTag to go to the Group's CoverPoint Table summary is g1_cp1 
+ // For example, if covergroup name is g1, instance name is i1, coverpoint is cp1, the TableTag to go to the Instance's CoverPoint Table summary is g1_i1_cp1 
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Total Summary ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+   Date             :, Tue Jun 30 17:47:36 2026 IST
+   User             :, joelphilip
+   Version          :, Vivado Simulator Coverage Report 2023.2
+   Command Line     :, /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xcrg -dir apb_uvm.sim/sim_1/behav/xsim -db_name tb_top_behav -report_dir reports/coverage/xcrg_report -report_format all -log reports/coverage/xcrg.lo 
+   Number of Tests  :, 1
+
+   Coverage Score            :, 90.4762
+   Total Insts Score         :, 90.4762
+   Total no of Cover Groups  :, 1
+   Total no of Instances     :, 1
+
+
+     CgName,                                           Score,      NumInsts,   AvgInstScore,   Weight,     Goal,       Merge Insts,    Get Inst Cov,   Per Inst,   AutoBinMax,     Comment,    
+
+       $unit_APB_slave_sv_1785538078::apb_coverage::apb_cg,90.4762     ,1           ,90.4762         ,1           ,100         ,0               ,0               ,1           ,64              ,            ,
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CoverGroups Summary ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+Cover Group Details : $unit_APB_slave_sv_1785538078::apb_coverage::apb_cg
+
+CgName,                                           Score,      NumInsts,   AvgInstScore,   Weight,     Goal,       Merge Insts,    Get Inst Cov,   Per Inst,   AutoBinMax,     Comment,    
+
+$unit_APB_slave_sv_1785538078::apb_coverage::apb_cg,90.4762     ,1           ,90.4762         ,1           ,100         ,0               ,0               ,1           ,64              ,            ,
+
+      Instances of CoverGroup - $unit_APB_slave_sv_1785538078::apb_coverage::apb_cg
+
+             InstName,                                         Score,      Weight,     Goal,       AtLeast,    AutoBinMax, PrintMissing,   IsInst,     Comment,    
+             obj.apb_cg                                        ,90.4762     ,1           ,100         ,1           ,64          ,0               ,1           ,            ,
+
+
+      Instance obj.apb_cg Cover Point Details 
+
+             Name,                                             TableTag,     Expected,   Uncovered,  Covered,    Percent,    Goal,       Weight,     AtLeast,    AutoBinMax, Comment,    
+             cp_paddr                                          ,apb_cg_obj.apb_cg_cp_paddr,8           ,0           ,8           ,100         ,100         ,1           ,1           ,64          ,            ,
+             cp_paddr_full                                     ,apb_cg_obj.apb_cg_cp_paddr_full,32          ,0           ,32          ,100         ,100         ,1           ,1           ,64          ,            ,
+             cp_pwrite                                         ,apb_cg_obj.apb_cg_cp_pwrite,2           ,0           ,2           ,100         ,100         ,1           ,1           ,64          ,            ,
+             cp_pslverr                                        ,apb_cg_obj.apb_cg_cp_pslverr,2           ,0           ,2           ,100         ,100         ,1           ,1           ,64          ,            ,
+             cp_wait_states                                    ,apb_cg_obj.apb_cg_cp_wait_states,3           ,2           ,1           ,33.3333     ,100         ,1           ,1           ,64          ,            ,
+
+
+      Instance obj.apb_cg Cross Cover Point Details 
+
+             Name,                                             TableTag,     Expected,   Uncovered,  Covered,    Percent,    Goal,       Weight,     AtLeast,    Comment,    
+             cross_addr_op                                     ,apb_cg_obj.apb_cg_cross_addr_op,16          ,0           ,16          ,100         ,100         ,1           ,1           ,            ,
+             cross_err_op                                      ,apb_cg_obj.apb_cg_cross_err_op,4           ,0           ,4           ,100         ,100         ,1           ,1           ,            ,
+
+
+
+
+
+
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: CoverPoint Tables::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+ Cover Point Table for Inst : obj.apb_cg, Variable :, cp_paddr
+ Table tag :, apb_cg_obj.apb_cg_cp_paddr
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   8           ,0           ,8           ,100         ,
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      all_ram_addrs_0,15          ,1           ,
+      all_ram_addrs_1,15          ,1           ,
+      all_ram_addrs_2,13          ,1           ,
+      all_ram_addrs_3,20          ,1           ,
+      all_ram_addrs_4,21          ,1           ,
+      all_ram_addrs_5,15          ,1           ,
+      all_ram_addrs_6,13          ,1           ,
+      all_ram_addrs_7,17          ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : obj.apb_cg, Variable :, cp_paddr_full
+ Table tag :, apb_cg_obj.apb_cg_cp_paddr_full
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   32          ,0           ,32          ,100         ,
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      valid_addrs_0,15          ,1           ,
+      valid_addrs_1,15          ,1           ,
+      valid_addrs_2,13          ,1           ,
+      valid_addrs_3,20          ,1           ,
+      valid_addrs_4,21          ,1           ,
+      valid_addrs_5,15          ,1           ,
+      valid_addrs_6,13          ,1           ,
+      valid_addrs_7,17          ,1           ,
+      oob_addrs_8 ,2           ,1           ,
+      oob_addrs_9 ,2           ,1           ,
+      oob_addrs_10,2           ,1           ,
+      oob_addrs_11,2           ,1           ,
+      oob_addrs_12,2           ,1           ,
+      oob_addrs_13,2           ,1           ,
+      oob_addrs_14,2           ,1           ,
+      oob_addrs_15,3           ,1           ,
+      oob_addrs_16,2           ,1           ,
+      oob_addrs_17,2           ,1           ,
+      oob_addrs_18,2           ,1           ,
+      oob_addrs_19,2           ,1           ,
+      oob_addrs_20,2           ,1           ,
+      oob_addrs_21,2           ,1           ,
+      oob_addrs_22,2           ,1           ,
+      oob_addrs_23,2           ,1           ,
+      oob_addrs_24,2           ,1           ,
+      oob_addrs_25,2           ,1           ,
+      oob_addrs_26,2           ,1           ,
+      oob_addrs_27,2           ,1           ,
+      oob_addrs_28,2           ,1           ,
+      oob_addrs_29,2           ,1           ,
+      oob_addrs_30,2           ,1           ,
+      oob_addrs_31,2           ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : obj.apb_cg, Variable :, cp_pwrite
+ Table tag :, apb_cg_obj.apb_cg_cp_pwrite
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   2           ,0           ,2           ,100         ,
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      read_op     ,93          ,1           ,
+      write_op    ,85          ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : obj.apb_cg, Variable :, cp_pslverr
+ Table tag :, apb_cg_obj.apb_cg_cp_pslverr
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   2           ,0           ,2           ,100         ,
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      no_error    ,129         ,1           ,
+      error_fired ,49          ,1           ,
+
+
+
+
+
+
+ Cover Point Table for Inst : obj.apb_cg, Variable :, cp_wait_states
+ Table tag :, apb_cg_obj.apb_cg_cp_wait_states
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ UserDefined,   3           ,2           ,1           ,33.3333     ,
+
+                      Uncovered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      zero_wait   ,0           ,1           ,
+      one_wait    ,0           ,1           ,
+
+
+                     Covered bins 
+
+      Name,       Hit Count,  AtLeast,    
+      multi_wait  ,178         ,1           ,
+
+
+
+
+
+
+ Cross Cover Point Table for Inst : obj.apb_cg, Variable :, cross_addr_op
+ Table tag :, apb_cg_obj.apb_cg_cross_addr_op
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ Total,          16          ,0           ,16          ,100         ,
+ Automatic,      16          ,0           ,16          ,1           ,
+
+                 Auto Covered bins 
+
+      cp_paddr        ,cp_pwrite       ,Hit Count,  AtLeast,    
+      all_ram_addrs_0 ,read_op         ,8           ,1           ,
+      all_ram_addrs_0 ,write_op        ,7           ,1           ,
+      all_ram_addrs_1 ,read_op         ,8           ,1           ,
+      all_ram_addrs_1 ,write_op        ,7           ,1           ,
+      all_ram_addrs_2 ,read_op         ,7           ,1           ,
+      all_ram_addrs_2 ,write_op        ,6           ,1           ,
+      all_ram_addrs_3 ,read_op         ,11          ,1           ,
+      all_ram_addrs_3 ,write_op        ,9           ,1           ,
+      all_ram_addrs_4 ,read_op         ,11          ,1           ,
+      all_ram_addrs_4 ,write_op        ,10          ,1           ,
+      all_ram_addrs_5 ,read_op         ,8           ,1           ,
+      all_ram_addrs_5 ,write_op        ,7           ,1           ,
+      all_ram_addrs_6 ,read_op         ,7           ,1           ,
+      all_ram_addrs_6 ,write_op        ,6           ,1           ,
+      all_ram_addrs_7 ,read_op         ,9           ,1           ,
+      all_ram_addrs_7 ,write_op        ,8           ,1           ,
+
+
+
+
+
+
+ Cross Cover Point Table for Inst : obj.apb_cg, Variable :, cross_addr_op
+ Table tag :, apb_cg_obj.apb_cg_cross_addr_op
+
+                      Summary 
+
+ Category,       Expected,   Uncovered,  Covered,    Percent,    
+ Total,          16          ,0           ,16          ,100         ,
+ Automatic,      16          ,0           ,16          ,1           ,
+
+                 Auto Covered bins 
+
+      cp_paddr        ,cp_pwrite       ,Hit Count,  AtLeast,    
+      all_ram_addrs_0 ,read_op         ,8           ,1           ,
+      all_ram_addrs_0 ,write_op        ,7           ,1           ,
+      all_ram_addrs_1 ,read_op         ,8           ,1           ,
+      all_ram_addrs_1 ,write_op        ,7           ,1           ,
+      all_ram_addrs_2 ,read_op         ,7           ,1           ,
+      all_ram_addrs_2 ,write_op        ,6           ,1           ,
+      all_ram_addrs_3 ,read_op         ,11          ,1           ,
+      all_ram_addrs_3 ,write_op        ,9           ,1           ,
+      all_ram_addrs_4 ,read_op         ,11          ,1           ,
+      all_ram_addrs_4 ,write_op        ,10          ,1           ,
+      all_ram_addrs_5 ,read_op         ,8           ,1           ,
+      all_ram_addrs_5 ,write_op        ,7           ,1           ,
+      all_ram_addrs_6 ,read_op         ,7           ,1           ,
+      all_ram_addrs_6 ,write_op        ,6           ,1           ,
+      all_ram_addrs_7 ,read_op         ,9           ,1           ,
+      all_ram_addrs_7 ,write_op        ,8           ,1           ,
+
+
+
+
+
+

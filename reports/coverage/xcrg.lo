@@ -1,0 +1,35 @@
+
+ Options Set are : 
+
+   Command Line               : xcrg -dir apb_uvm.sim/sim_1/behav/xsim -db_name tb_top_behav -report_dir reports/coverage/xcrg_report -report_format all -log reports/coverage/xcrg.lo
+   Report Format              : all
+   Log File                   : reports/coverage/xcrg.lo
+   Func Cov Input Dir         : apb_uvm.sim/sim_1/behav/xsim
+   Func Cov Input DB[s]       : tb_top_behav
+   Func Cov Report Directory  : reports/coverage/xcrg_report
+
+
+
+                  Functional Coverage Report 
+
+ Restoring Coverage DB[s] from : 
+  1	apb_uvm.sim/sim_1/behav/xsim/xsim.covdb/tb_top_behav/xsim.covinfo
+
+ Creating Output Directory            : xsim.covdb/xcrg_mdb
+
+ Saving the Coverage Info at          : xsim.covdb/xcrg_mdb/xsim.covinfo
+
+ Created Coverage Report Directory    : reports/coverage/xcrg_report
+
+ Creating CSV+Text Report at          : reports/coverage/xcrg_report/xcrg_func_cov_report.txt
+
+ XILINX_VIVADO derived is             : /tools/Xilinx/Vivado/2023.2
+
+ Setting the report dir name as       : reports/coverage/xcrg_report
+
+ Creating dashboard.html 
+
+ Creating groups.html 
+
+ Creating grp0.html 
+
