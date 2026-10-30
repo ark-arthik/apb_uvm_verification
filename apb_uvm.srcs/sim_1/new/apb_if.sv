@@ -66,10 +66,8 @@ interface apb_if (input logic PCLK);
     assert_penable_deassert: assert property (p_penable_deassert);
 
     // 6. APB3 Spec: PSLVERR is only meaningful when PREADY is also asserted.
-    //    NOTE: The current DUT drives PSLVERR combinationally as soon as
-    //    PADDR > 7, even during wait states when PREADY is still low. This
-    //    assertion will CATCH that spec violation - fix the DUT by gating
-    //    PSLVERR on PREADY: assign PSLVERR = (PSELx && PENABLE && PREADY && PADDR > 7);
+    //    The DUT gates PSLVERR on PREADY, so this assertion guards
+    //    against a regression that drives PSLVERR during wait states.
     property p_slverr_requires_pready;
         @(posedge PCLK) disable iff (!PRESETn)
         (PSELx && PENABLE && PSLVERR) |-> PREADY;
